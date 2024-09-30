@@ -12,13 +12,13 @@ program define extract_xyz
     drop `varname'_temp
 end
 
-import delimited "D:/swingvision_double_all_csv/019b0cb7-14c5-4a37-aa20-c3b4d69236e7/shots.csv", varnames(1)
+import delimited "D:/swingvision_csv/matches_double2/00b31e4b-370b-4e18-93ca-a1b3f5638404/shots.csv", varnames(1)
 
-// 보려고하는 shot_id 설정
+// 보려고하는 shot_idx 설정
 local shot_idx = 7
 
-extract_xyz bounce_location `shot_id'
-extract_xyz hit_location `shot_id'
+extract_xyz bounce_location `shot_idx'
+extract_xyz hit_location `shot_idx'
 
 // 코트 사이즈 설정 (정식 테니스 코트 규정에 의한 코트 크기: width 10.97, length 23.77)
 input x y
