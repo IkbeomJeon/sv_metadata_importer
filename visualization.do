@@ -12,10 +12,10 @@ program define extract_xyz
     drop `varname'_temp
 end
 
-import delimited "D:/swingvision/00d7d36b-2e74-465a-851d-d235352ca8b2/shots.csv", varnames(1)
+import delimited "D:/swingvision_double_all_csv/019b0cb7-14c5-4a37-aa20-c3b4d69236e7/shots.csv", varnames(1)
 
 // 보려고하는 shot_id 설정
-local shot_id = 123
+local shot_idx = 7
 
 extract_xyz bounce_location `shot_id'
 extract_xyz hit_location `shot_id'

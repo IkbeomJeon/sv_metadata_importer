@@ -1,45 +1,23 @@
-# Project Title
-One to two paragraph statement about your project and what it does.
+# Swingvision Metadata Importer
+
 
 ## Prerequisites
+[swingvision_metadata_menual 참고](https://docs.google.com/spreadsheets/d/1ypqLnGAZWQRKI-0sVtD-_EQ3ImAgEpNduY2jkm9wdf8/edit?usp=sharing)
 
-Before you begin, ensure you have met the following requirements:
-- You need to have Node.js and npm installed.
+## 파일 구성
 
-## Installing <Project_Name>
+### `import_dataset_example.do`
 
-To install <Project_Name>, follow these steps:
 
-Linux and macOS:
-``` bash
-<install_command>
+### `visualization_example.do`
+shot.csv파일을 로드하여 heat, bounce location을 시각화 하는 코드
+```STATA
+import delimited "{path_to_maches_dir}/shots.csv", varnames(1)
+
+// 보려고하는 shot_id 설정
+local shot_idx = 2
 ```
-
-To use <Project_Name>, follow these steps:
-```
-<usage_example>
-```
-
-## Contributing to <Project_Name>
-To contribute to <Project_Name>, follow these steps:
-
-1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <Project_Name>/<location>`
-5. Create the pull request.
-
-Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
-
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-- [@contributor1](https://github.com/contributor1)
-- [@contributor2](https://github.com/contributor1)
 
 ## Contact
 If you want to contact me you can reach me at <ikbeomjeon@gmail.com>.
 
-## License
-
-This project uses the following license: [<license_name>](link).
