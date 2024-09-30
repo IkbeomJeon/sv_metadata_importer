@@ -9,13 +9,13 @@ sheet 하단 하위 sheet들 모두 확인 요망.
 ## Dataset
 [swingvision_metadata_csv 다운로드 링크]()
 
-## 파일 구성
+## Usage
 ### `visualization_example.do`
 shot.csv파일을 로드하여 heat, bounce location을 시각화 하는 코드
 ```STATA
 import delimited "{path_to_maches_dir}/shots.csv", varnames(1)
 
-// 보려고하는 shot_id 설정
+// 보려고하는 shot_idx 설정
 local shot_idx = 2
 ```
 
