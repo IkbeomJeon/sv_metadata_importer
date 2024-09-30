@@ -2,7 +2,12 @@
 
 
 ## Prerequisites
-[swingvision_metadata_menual 참고](https://docs.google.com/spreadsheets/d/1ypqLnGAZWQRKI-0sVtD-_EQ3ImAgEpNduY2jkm9wdf8/edit?usp=sharing)
+[swingvision_metadata_manual](https://docs.google.com/spreadsheets/d/1ypqLnGAZWQRKI-0sVtD-_EQ3ImAgEpNduY2jkm9wdf8/edit?usp=sharing)
+
+sheet 하단 하위 sheet들 모두 확인 요망.
+
+## Dataset
+[swingvision_metadata_csv 다운로드 링크]()
 
 ## 파일 구성
 ### `visualization_example.do`
@@ -16,8 +21,7 @@ local shot_idx = 2
 
 ### `download_video_example.do`
 STATA에서 http request기능을 지원하지 않아서 url주소를 다운로드 하진 못함.
-참고만 하세요.
-
+혹시 필요하다면 파이썬 코드로 업로드하겠음.
 ```STATA
 import delimited "{path_to_match_dir}/match.csv", varnames(1) 
 
