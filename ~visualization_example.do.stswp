@@ -30,7 +30,7 @@ input x y
 end
 
 twoway (line y x, lcolor(green)) || ///                 // 코트의 경계선 그리기
-    (scatter hit_location_y hit_location_x, msymbol(Oh) msize(medium) mcolor(blue) ///
+    (scatter hit_location_y hit_location_x, msymbol(Oh) msize(medium) mcolor() ///
     legend(label(2 "hit_location"))) || ///				// 범례에 hit_location으로 표시
     (scatter bounce_location_y bounce_location_x, msymbol(Oh) msize(medium) mcolor(red) ///
     legend(label(3 "bounce_location"))) || /// 			// 범례에 bounce_location으로 표시

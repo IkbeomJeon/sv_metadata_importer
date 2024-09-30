@@ -7,7 +7,7 @@
 sheet 하단 하위 sheet들 모두 확인 요망.
 
 ## Dataset
-[swingvision_metadata_csv 다운로드 링크]()
+[swingvision_metadata_csv]()
 
 ## Usage
 ### `visualization_example.do`
